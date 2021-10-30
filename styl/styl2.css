@@ -1,0 +1,202 @@
+body
+{
+    color:#DD9729;
+    background-image: url(../img/baackgrund.webp);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    grid-template-rows:  20% 65% 10%;
+    grid-template-areas:
+     "head head"
+     "aside main"
+     "footer footer";
+}
+#menucheckbox{
+    display: none;
+}
+#menuicon{
+    display: none;
+}
+#logo{
+    max-width: 100%;
+}
+#head{
+    grid-area: head;
+   
+    
+}
+#globalNav ul{
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    gap: 60px;
+
+    justify-content: center;
+    box-shadow:3px 3px 4px 4px #DD9729;
+   
+}
+#globalNav a {
+  display: block;
+    text-decoration: none;
+    color:#DD9729;
+    font-size: 30px;
+
+}
+#globalNav li{
+ 
+  justify-content: center;
+}
+#globalNav #thisBage{
+    color: aliceblue;
+}
+main{
+    
+   
+    grid-area: main;
+    border-style: solid;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px;
+}
+aside{
+    grid-area: aside;
+}
+
+#lokalNav {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
+    list-style-type: none;
+}
+
+   
+ #lokalNav li a {
+
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 100px;
+    height: 125px;
+   
+    background-repeat: no-repeat;
+
+    text-indent: -9999px;
+
+
+    
+}
+#lokalNav li:nth-of-type(1) a {
+    background-image: url(../img/ring.png);
+}
+#lokalNav li:nth-of-type(2) a {
+    background-image: url(../img/Halsband.png);
+}
+#lokalNav li:nth-of-type(3) a {
+    background-image: url(../img/Klockor.png);
+}
+#lokalNav li:nth-of-type(4) a {
+    background-image: url(../img/Örhängen.png);
+}
+
+
+/* main div  {
+    display: none;
+}
+ main div:target{
+     display: block;
+ } */
+ figure img {
+     width: 80px;
+     height:80px;
+     border-style: inset;
+     border-radius: 10%;
+ }
+ #imgProduct{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+ #imgProduct a {
+     background-color: #DD9729;
+     color: black;
+     margin: 5px;
+     font-size: large;
+
+ }
+#imgProduct input {
+     display:none;
+ }
+
+ #imgProduct input + span {
+     cursor: zoom-in;
+ }
+ #imgProduct span img:hover {
+     background-color: #daa75571;
+ }
+ 
+ #imgProduct input:checked + span {
+     cursor: zoom-out;
+     position: fixed;
+     background-color: #fcaa1e;
+     opacity: 0.8;
+     top:10%;
+     left: 10%;
+     right: 10%;
+     bottom: 10%;
+     border-radius: 20%;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ #imgProduct input:checked + span img
+ { background-color: rgb(26, 27, 27);
+     width: auto;
+     height: auto;
+     max-width: 100vw;
+     max-height: 100vh;
+
+ }
+@media screen and (max-width:900px) {
+    
+        #lokalNav li a {
+
+            display: block;
+            width: auto;
+            height:auto;
+           
+           
+        
+            text-indent: 0px;
+        background-image:unset !important;
+        font-size: 25px;
+        font-style: italic;
+        text-decoration: none;
+        justify-content: center;
+
+        color: #DD9729;
+          }
+          #lokalNav{
+              flex-direction: row;
+              gap: 20px;
+              justify-content: center;
+              box-shadow:3px 3px 4px 4px #DD9729;
+          }
+          body
+          {display: block;
+          }
+        main {
+            border-style: unset;
+            box-shadow: none;
+        }
+    
+    
+}
+
+
+
+
