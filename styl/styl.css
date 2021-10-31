@@ -21,6 +21,8 @@ max-width: 100%;
  display: flex;
  flex-direction: row;
  gap: 15%;
+ border-color: #fcaa1e;
+    box-shadow: 4px 4px 4px 8px #fcaa1e;
 
 }
 #headImage{
@@ -50,12 +52,12 @@ main
 {
     width: 100%;
     display: grid;
-    grid-template-rows: 60px auto auto;
-   
-    grid-template-areas: 
-    "head"
-    "smalImg"
-    "largImg";
+    grid-template-rows: 10% 600px;
+    grid-template-columns: 30% auto;
+ 
+      grid-template-areas: 
+  "head head"
+    "smalImg largImg";
     
 }
 h1{
@@ -69,28 +71,57 @@ h1{
 #largImg
 {
     grid-area: largImg;
+    margin-left: 15%;
 }
 #largImg input , #largImg img{
    
-   max-width: 100vw;
-    display: none;
+       display: none;
 }
-
+#newCollection {
+    grid-area: smalImg;
+}
 ul#newCollection{
     list-style-type: none;
-    grid-area: smalImg;
+   
     display: flex;
-    flex-direction: row;
-    gap: 5px;
-    overflow:scroll;
-  
-    scrollbar-color: #fcaa1e;
+    flex-direction: column;
+    flex-wrap: wrap;
+      
+}
+#newCollection img{
+    width: 30%;
+    height: 50%;
+    border-style: groove;
+    border-color: #fcaa1e;
+    border-radius: 10%;
+    box-shadow: 4px 4px #fcaa1e;
+}
+figcaption{
+    margin: 0px;
+    padding: 0px;
+}
+figcaption p{
+    color: #fcaa1e;
+
+}
+figcaption a {
+    background-color: #fcaa1e;
+    color: black;
+    
 }
 #largImg input:checked + img {
     display: block;
+    margin: 0px;
+    padding: 0px;
+    border-style: outset;
+    border-color: #fcaa1e;
+    box-shadow: 4px 4px 4px #fcaa1e;
+    border-radius: 50%;
+    width: 500px;
     height: 500px;
-    width: auto;
+    max-width: 100%;
 }
+
 @media  screen and (max-width:900px)
 {
     #start-img  {
