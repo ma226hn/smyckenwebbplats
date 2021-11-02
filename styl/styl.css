@@ -15,6 +15,9 @@ img
 {
 max-width: 100%;
 }
+a{
+    text-decoration: none;
+}
 
 #globalNav ul
 { 
@@ -135,6 +138,8 @@ figcaption a {
        
     margin: 0px;
  }
+ 
+
 
 @media  screen and (max-width:900px)
 {

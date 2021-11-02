@@ -1,13 +1,19 @@
+html , body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 body
 {
+
     color:#DD9729;
     background-image: url(../img/baackgrund.webp);
     background-size: cover;
     display: grid;
-    grid-template-columns: 15% 80%;
-    grid-template-rows:  20% 65% 10%;
+    grid-template-columns: 15% 85%;
+    grid-template-rows:  20% 70% 10%;
     grid-template-areas:
-     "head head"
+     "header header"
      "aside main"
      "footer footer";
 }
@@ -20,8 +26,8 @@ body
 #logo{
     max-width: 100%;
 }
-#head{
-    grid-area: head;
+header{
+    grid-area:header;
    
     
 }
@@ -49,8 +55,12 @@ body
  
   justify-content: center;
 }
-#globalNav #thisBage{
-    color: aliceblue;
+a.thisBage{
+    color: aliceblue !important;
+}
+#globalNav a:hover , #lokalNav a:hover {
+    transform: scale(1.2);
+    color: #c0d68d71;
 }
 main{
     
@@ -59,6 +69,7 @@ main{
     border-style: solid;
     border-radius: 10%;
     box-shadow: 5px 5px 5px;
+    margin: 1%;
 }
 aside{
     grid-area: aside;
@@ -161,6 +172,30 @@ aside{
      max-height: 50vh;
 
  }
+ footer{
+     grid-area: footer;
+     padding: 5px;
+     background-image:url(../img/footerback.png);
+     background-size:cover;
+     display: flex;
+     flex-direction: row;
+     gap: 4%;
+     margin-top: 1%;
+     margin-right: 0px;
+    
+    
+ }
+ footer img {
+     width: 40px;
+     height: 40px;
+ }
+ footer p , footer a {
+     background-color: black;
+     color: #DD9729;
+     
+ }
+
+
 @media screen and (max-width:900px) {
     
         #lokalNav li a {
@@ -168,9 +203,6 @@ aside{
             display: block;
             width: auto;
             height:auto;
-           
-           
-        
             text-indent: 0px;
         background-image:unset !important;
         font-size: 25px;
@@ -195,6 +227,50 @@ aside{
         }
     
     
+}
+@media screen and (max-width:500px){
+    #menuicon {
+        display: inline-block;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/menuicon.png);
+        margin: 0px;
+    }
+    
+    #menucheckbox {
+        display: none;
+    }
+    #menucheckbox ~ nav {
+        display: none;
+    }
+    #menucheckbox:checked ~ nav {
+        display: block;
+    }
+    #imgProduct input:checked + span {
+        
+        top:0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        border-radius: 20%;
+   
+       
+    }
+    #imgProduct input:checked + span img
+ { 
+     max-width: 100vw;
+     max-height: 100vh;
+    
+}
+#globalNav a {
+    font-size: 20px;
+
+}
+#globalNav ul{
+    margin-top: 0px;
+    gap: 25px;
+}
 }
 
 

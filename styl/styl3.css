@@ -1,0 +1,133 @@
+html{
+    justify-content: center;
+    padding-left: 20%;
+}
+body{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/baackgrund.webp);
+    width: 60%;
+    height: 100%;
+}
+#globalNav ul{
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+  gap: 5%;
+
+    justify-content: center;
+    box-shadow:3px 3px 4px 4px #DD9729;
+}
+#globalNav a {
+    display: block;
+      text-decoration: none;
+      color:#DD9729;
+     font-size: 25px;
+  
+  }
+  #globalNav a:hover {
+      color: aliceblue;
+      transform:scale(1.2);
+  }
+  #globalNav li{
+   
+    justify-content: center;
+  }
+label{
+    font-style: italic;
+}
+pre , p {
+    color: #fcaa1e;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+legend {
+    font-size: 20px;
+    color: #fcaa1e;
+    border-style: groove;
+    border-color: #fcaa1e;
+}
+div#finish {
+    display: none;
+}
+ 
+fieldset {
+background-color: #fcab1eb0;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    border-style: groove;
+    border-color: #fcaa1e;
+   
+}
+div#faktura {
+    display: none;
+}
+div#kort {
+    display:none;
+}
+input#kreditkort:checked + div {
+    display: block;
+}
+input#fakturaRadio:checked + div {
+    display: block;
+}
+#buy{
+    color: #DD9729;
+    background-color: black;
+    border-style: groove;
+    border-color: #DD9729;
+    box-shadow: 6px 6px 6px #DD9729;
+    width: 8rem;
+    height: 4rem;
+    font-size: 20px;
+}
+#buy:hover {
+    background-color: aliceblue;
+    transform:scale(0.9)
+}
+ a#boxPhoto {
+
+     margin: 0px;
+    display:inline-block;
+    background-image: url(../img/guldbox.png);
+    background-repeat: no-repeat;
+    background-position: -175px 0px;
+    width: 175px ;
+    height:140px;
+
+     text-decoration: none;
+}
+#finish p {
+    color: black;
+    font-style: italic;
+    
+}
+#finish:target {
+    display: block;
+    border-style: outset;
+    border-color: #DD9729;
+    background-color: rgba(238, 214, 233, 0.616);
+    border-radius: 20%;
+   
+    
+}
+#finish:target + a {
+    background-position: 0px 0px;
+}
+
+@media screen and (max-width:600px) {
+    html {
+        padding: 0px;
+    }
+    body{
+        width:100vw;
+    }
+    
+}

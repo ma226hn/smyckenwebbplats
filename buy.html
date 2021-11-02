@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sol-buy</title>
+    <link rel="stylesheet" href="styl/styl3.css">
+
+</head>
+<body>
+    <nav id="globalNav">
+        <ul>
+            <li><a href="index.html" >Hem</a></li>
+            <li><a href="herr.html" >Herr</a></li>
+            <li><a href="dam.html" class="thisBage"> Dam</a></li>
+            <li><a href="omButteken.html"> Butteken</a></li>
+        </ul>
+        
+    </nav>
+        <main>
+
+<form action="/buy.html#finish">
+    
+
+    <pre>Beställningsvärde	1990,00 kr.
+        Leverans	390,90 kr.
+        Summa	2380,90 kr.
+        </pre>
+       
+        <div id="finish">
+ 
+            <p>Tack för att du väljer oss</p>
+            <p>Ditt paket har registrerat</p>
+            <p>Packad leverans inom 2-3 dagar</p>
+        
+        </div>
+        <a href="#" id="boxPhoto"></a>
+        <legend> Dina uppgifter</legend> 
+        <fieldset>
+        
+      <label for="fname">förnamn:</label>
+      <input type="text" id="fname" name="fname" required><br><br>
+      <label for="lname">Efternamn:</label>
+      <input type="text"  name="lname" required><br><br>
+      <label for="email">E-pastadress:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="telefon">Telefonnummer:</label>
+      <input type="text" id="telefon" name="telefon"><br><br>
+      <label for="postnummer">postnummer:</label>
+      <input type="text" id="postnummer" name="postnummer"><br><br>
+      <label for="ort">ort:</label>
+      <input type="text" id="telefon" name="telefon"><br><br>
+      <label for="Adress">postnummer:</label>
+      <input type="text" id="Adress" name="Adress"><br><br>
+    </fieldset>
+        <legend> Betalningssätt</legend>
+        <fieldset>
+        <label>
+            <input type="radio" name="pay_method"  id="fakturaRadio"> &rarrhk; Faktura
+            
+         
+        <div id="faktura">
+        <label >
+            <input type="radio" name="faktura"> betala inom 14 dager
+        </label>
+        <label >
+            <input type="radio" name="faktura" > betala inom 28 dager
+        </label>
+        
+    </div>
+      </label>  
+        <label>
+            <input type="radio" name="pay_method"  id="kreditkort"> &rarrhk; Kreditkort
+       
+             <div id="kort">
+            <label >
+                <input type="radio" name="kort"> SwedBank
+            </label>
+            <label >
+                <input type="radio" name="kort"> Spara bank
+            </label>
+            <label >
+                <input type="radio" name="kort" > Nordia Bank
+            </label> <br><br>
+
+            <label for="konto">konto nummer:</label>
+           <input type="text" id="konto" name="konto"><br><br>
+        </label>
+    </fieldset>
+        
+      <input type="submit" value="beställa" id="buy"> <br> <br>
+    
+    
+  </form>
+  
+</main>
+   
+   
+    
+</body>
+</html>
