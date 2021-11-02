@@ -69,6 +69,9 @@ main
     "smalImg largImg";
     
 }
+#logo{
+ max-width: 100%;
+}
 h1{
     padding-left: 30%;
     padding-right: 30%;
@@ -76,6 +79,7 @@ h1{
     color:#fcaa1e;
     font-size: 30px;
     justify-content: center;
+    text-shadow: 3px 5px 3px #fcab1e63;
 }
 #largImg
 {
