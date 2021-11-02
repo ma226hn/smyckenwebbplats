@@ -194,8 +194,52 @@ aside{
      color: #DD9729;
      
  }
+ /* stil for (butiken ) sida */
+ picture{
+     max-width: 100%;
+     float:none;
+     margin:5%;
+     padding: 5%;
+     width: 70%;
+     justify-content: center;
+ }
+ #tider p, #map p {
+     background-color: #DD9729;
+     color: black;
+ }
+ th{
+     color: aliceblue;
+ }
 
-
+ iframe
+ {
+     width: 200px;
+     height: 200px;
+ }
+ #butikInformation {
+     float: none;
+     clear: none;
+     margin: 5%;
+     font-size: 20px;
+ }
+ #photos
+ {
+     display: flex;
+     flex-direction: row;
+     flex-grow: 1;
+     flex-shrink: 1;
+     flex-wrap: wrap;
+     margin: 4%;
+     gap: 10px;
+     
+ }
+ #photos img {
+     border-style: solid;
+ }
+ #photos img:hover {
+     transform: scale(1.2);
+     z-index: 99999;
+ }
 @media screen and (max-width:900px) {
     
         #lokalNav li a {
