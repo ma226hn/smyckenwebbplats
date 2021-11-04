@@ -37,9 +37,9 @@
         
         </div>
         <a href="#" id="boxPhoto"></a>
-        <legend> Dina uppgifter</legend> 
-        <fieldset>
         
+        <fieldset>
+            <legend> Dina uppgifter</legend> 
       <label for="fname">förnamn:</label>
       <input type="text" id="fname" name="fname" required><br><br>
       <label for="lname">Efternamn:</label>
@@ -51,17 +51,19 @@
       <label for="postnummer">postnummer:</label>
       <input type="text" id="postnummer" name="postnummer"><br><br>
       <label for="ort">ort:</label>
-      <input type="text" id="telefon" name="telefon"><br><br>
+      <input type="text" id="ort" name="ort"><br><br>
       <label for="Adress">postnummer:</label>
       <input type="text" id="Adress" name="Adress"><br><br>
     </fieldset>
-        <legend> Betalningssätt</legend>
+        
         <fieldset>
-        <label>
+         <legend> Betalningssätt</legend>
+
+        <label id="faktura">
             <input type="radio" name="pay_method"  id="fakturaRadio"> &rarrhk; Faktura
             
          
-        <div id="faktura">
+        
         <label >
             <input type="radio" name="faktura"> betala inom 14 dager
         </label>
@@ -69,12 +71,12 @@
             <input type="radio" name="faktura" > betala inom 28 dager
         </label>
         
-    </div>
+    
       </label>  
-        <label>
+        <label id="kort">
             <input type="radio" name="pay_method"  id="kreditkort"> &rarrhk; Kreditkort
        
-             <div id="kort">
+             
             <label >
                 <input type="radio" name="kort"> SwedBank
             </label>
@@ -85,8 +87,6 @@
                 <input type="radio" name="kort" > Nordia Bank
             </label> <br><br>
 
-            <label for="konto">konto nummer:</label>
-           <input type="text" id="konto" name="konto"><br><br>
         </label>
     </fieldset>
         

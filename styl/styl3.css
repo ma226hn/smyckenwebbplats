@@ -48,7 +48,7 @@ pre , p {
 
 legend {
     font-size: 20px;
-    color: #fcaa1e;
+    color: #f2f0f8;
     border-style: groove;
     border-color: #fcaa1e;
 }
@@ -66,16 +66,17 @@ background-color: #fcab1eb0;
     border-color: #fcaa1e;
    
 }
-div#faktura {
+
+#faktura label {
     display: none;
 }
-div#kort {
+#kort label {
     display:none;
 }
-input#kreditkort:checked + div {
+input#kreditkort:checked ~ label {
     display: block;
 }
-input#fakturaRadio:checked + div {
+input#fakturaRadio:checked ~ label {
     display: block;
 }
 #buy{
