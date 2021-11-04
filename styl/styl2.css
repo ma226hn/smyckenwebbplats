@@ -114,12 +114,7 @@ aside{
 }
 
 
-/* main div  {
-    display: none;
-}
- main div:target{
-     display: block;
- } */
+
  figure img {
      width: 80px;
      height:80px;
@@ -213,7 +208,7 @@ aside{
 
  iframe
  {
-     width: 200px;
+     width: 150px;
      height: 200px;
  }
  #butikInformation {
