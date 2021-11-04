@@ -116,11 +116,11 @@ z-index: 999;
 }
 
 
-label p{
+#newCollection li p{
     color: #fcaa1e;
 
 }
-label a {
+#newCollection li p a {
     background-color: #fcaa1e;
     color: black;
     
