@@ -67,16 +67,17 @@ background-color: #fcab1eb0;
    
 }
 
-#faktura label {
+input#kreditkort +div {
     display: none;
 }
-#kort label {
-    display:none;
+input#fakturaRadio +div {
+    display: none;
 }
-input#kreditkort:checked ~ label {
+
+input#kreditkort:checked +div {
     display: block;
 }
-input#fakturaRadio:checked ~ label {
+input#fakturaRadio:checked +div {
     display: block;
 }
 #buy{

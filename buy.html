@@ -59,11 +59,11 @@
         <fieldset>
          <legend> Betalningssätt</legend>
 
-        <label id="faktura">
+        <label for="fakturaRadio" > </label> 
             <input type="radio" name="pay_method"  id="fakturaRadio"> &rarrhk; Faktura
             
-         
-        
+       
+        <div>
         <label >
             <input type="radio" name="faktura"> betala inom 14 dager
         </label>
@@ -71,12 +71,12 @@
             <input type="radio" name="faktura" > betala inom 28 dager
         </label>
         
-    
-      </label>  
-        <label id="kort">
+    </div>
+      
+        <label for="kreditkort"></label> 
             <input type="radio" name="pay_method"  id="kreditkort"> &rarrhk; Kreditkort
-       
-             
+       <div>
+        
             <label >
                 <input type="radio" name="kort"> SwedBank
             </label>
@@ -86,8 +86,8 @@
             <label >
                 <input type="radio" name="kort" > Nordia Bank
             </label> <br><br>
-
-        </label>
+        </div>
+       
     </fieldset>
         
       <input type="submit" value="beställa" id="buy"> <br> <br>
