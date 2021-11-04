@@ -43,7 +43,7 @@ a{
     transition-property: all;
     transition-delay: 1ms;
 }
-#globalNav a h1 {
+#globalNav a p {
     display: none;
 }
 
@@ -72,7 +72,7 @@ main
 #logo{
  max-width: 100%;
 }
-h1{
+h1 , #globalNav a p{
     padding-left: 30%;
     padding-right: 30%;
     grid-area: head;
@@ -116,11 +116,11 @@ z-index: 999;
 }
 
 
-figcaption p{
+label p{
     color: #fcaa1e;
 
 }
-figcaption a {
+label a {
     background-color: #fcaa1e;
     color: black;
     
@@ -156,7 +156,7 @@ figcaption a {
     #globalNav a img {
         display: none;
     }
-    #globalNav a h1 {
+    #globalNav a p {
         display: block;
         border-style: solid;
         padding: 2px;
