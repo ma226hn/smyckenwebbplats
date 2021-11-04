@@ -240,6 +240,10 @@ aside{
      transform: scale(1.2);
      z-index: 99999;
  }
+ img#person {
+     float: left;
+    margin: 50px;
+ }
 @media screen and (max-width:900px) {
     
         #lokalNav li a {
@@ -270,7 +274,9 @@ aside{
             box-shadow: none;
         }
     
-    
+        img#person {
+            float: none
+        }
 }
 @media screen and (max-width:500px){
     #menuicon {
