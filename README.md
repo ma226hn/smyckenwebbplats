@@ -1,2 +1,2 @@
 # smyckenwebbplats
-- frontend for jewelry website with pure html and css
+- Responsive jewelry website design using pure html and css
